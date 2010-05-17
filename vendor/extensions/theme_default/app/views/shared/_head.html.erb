@@ -1,0 +1,29 @@
+<title><%= title %></title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<%= stylesheet_tags %>
+<%= javascript_include_tag 'jquery-1.3.2.min', 'jquery.validate.min.js', :cache => 'jquery-core' %>
+<script type="text/javascript">
+	var imgs = [
+	'/images/TopBanner1.jpg',
+	'/images/TopBanner2.jpg',
+        '/images/TopBanner3.jpg',
+        '/images/TopBanner4.jpg',
+        '/images/TopBanner5.jpg'];
+	var cnt = imgs.length;
+	$(function() {
+		setInterval(Slider, 4000);
+		});
+	function Slider() {
+		$('#imageSlide').fadeOut("slow", function() {
+         	   $(this).attr('src', imgs[(imgs.length++) % cnt]).fadeIn("slow");
+		});
+                }
+</script>
+<% unless I18n.locale.to_s[0..1] == 'en' -%>
+  <%= javascript_include_tag ['localization/messages_', I18n.locale.to_s[0..1], '.js'].join %>
+<% end -%>
+<% unless I18n.locale.to_s[0..1] == 'en' -%>
+  <%= javascript_include_tag ['localization/messages_', I18n.locale.to_s[0..1], '.js'].join %>
+<% end -%>  
+<%= meta_data_tags %> 
+<%= yield :head %>

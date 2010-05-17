@@ -1,0 +1,18 @@
+# Default database configuration
+
+development:
+  adapter: mysql
+  database: rot123_development
+  username: root
+  password: root
+
+test:
+  #adapter: sqlite3
+  #database: db/test.sqlite3
+
+production:
+  #adapter: mysql
+  #database: spree_production
+  #username: root
+  #password: root
+

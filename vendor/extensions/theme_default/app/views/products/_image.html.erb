@@ -1,0 +1,50 @@
+<% if image %>
+  <%= image_tag image.attachment.url(:product)  %>
+<% else %>
+  <%= link_to product_image(@product, :title => "Click To View"), @product.images.first.attachment.url(:large), :class=>"jqzoom4"  %>
+<% end %>
+
+
+
+<% content_for :head do %>
+<%= javascript_include_tag 'Magnifier/jquery' %>
+<%= stylesheet_link_tag 'jqzoom' %>
+<script type="text/javascript">
+ 	$(document).ready(function(){
+		$(function() {
+				var options4 =
+			{
+
+				zoomWidth: 385,
+				zoomHeight: 460,
+				position : 'right',
+				yOffset :-40,
+				xOffset :210,
+				title :false
+
+
+			}
+			$(".jqzoom4").jqzoom(options4);  //da sistemare errore nella eliminazione zoom window
+		});
+
+ 	$('.expand').click(function(){
+	 	var href= jQuery(this).attr('href');
+	 	var elclass = href.match('#([a-zA-Z]+)([0-9]+)');
+
+	 	if(elclass[1] == 'html')
+	 	{
+	 		jQuery('.html'+elclass[2]+'div').show();
+	 		jQuery('.js'+elclass[2]+'div').hide();
+	 	}else
+	 	{
+	 		jQuery('.html'+elclass[2]+'div').hide();
+	 		jQuery('.js'+elclass[2]+'div').show();
+	 	}
+	 	jQuery(this).addClass('alert').siblings('a').removeClass('alert');
+		return false;
+ 	});
+
+ 	});
+
+</script>
+<% end %>

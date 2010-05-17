@@ -1,0 +1,138 @@
+mc_root:
+  id: 1000
+  name: Categories
+  taxonomy: master_categories
+  permalink: categories/
+  position: 0
+  lft: 1
+  rgt: 12
+mc_l1_n1:
+  id: 1002
+  name: DINING TABLES
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 1
+  products:
+  permalink: categories/DINIG TABLES/
+  lft: 8
+  rgt: 9
+mc_l1_n2:
+  id: 1003
+  name: COFFEE TABLES
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 2
+  products:
+  permalink: categories/COFFEE TABLES/
+  lft: 10
+  rgt: 11
+mc_l1_n3:
+  id: 1004
+  name: SIDE TABLES
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 3
+  products:
+  permalink: categories/SIDE TABLES/
+  lft: 10
+  rgt: 11
+mc_l1_n4:
+  id: 1005
+  name: CONSOLES
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 4
+  products:
+  permalink: categories/CONSOLES/
+  lft: 10
+  rgt: 11
+mc_l1_n5:
+  id: 1006
+  name: BENCHES
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 5
+  products:
+  permalink: categories/BENCHES/
+  lft: 10
+  rgt: 11
+mc_l1_n6:
+  id: 1007
+  name: COFFEE TABLES
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 6
+  products:
+  permalink: categories/COFFEE TABLES/
+  lft: 10
+  rgt: 11
+mc_l1_n7:
+  id: 1008
+  name: STOOLS & OTTOMANS
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 7
+  products:
+  permalink: categories/STOOLS & OTTOMANS/
+  lft: 10
+  rgt: 11
+mc_l1_n8:
+  id: 1009
+  name: BAR STOOLS
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 8
+  products:
+  permalink: categories/BAR STOOLS/
+  lft: 10
+  rgt: 11
+mc_l1_n9:
+  id: 1010
+  name: WALL SCULPTURES
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 9
+  products:
+  permalink: categories/COFFEE TABLES/
+  lft: 10
+  rgt: 11
+mc_l1_n10:
+  id: 1011
+  name: MIRRORS
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 10
+  products:
+  permalink: categories/MIRRORS/
+  lft: 10
+  rgt: 11
+mc_l1_n11:
+  id: 1012
+  name: PLANTERS
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 11
+  products:
+  permalink: categories/PLANTERS/
+  lft: 10
+  rgt: 11
+mc_l1_n12:
+  id: 1013
+  name: LIGHTING
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 12
+  products:
+  permalink: categories/LIGHTING/
+  lft: 10
+  rgt: 11
+mc_l1_n13:
+  id: 1014
+  name: WOOD SLABS
+  taxonomy: master_categories
+  parent_id: 1000
+  position: 13
+  products:
+  permalink: categories/WOOD SLABS/
+  lft: 10
+  rgt: 11
